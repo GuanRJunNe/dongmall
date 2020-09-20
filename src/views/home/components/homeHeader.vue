@@ -2,6 +2,7 @@
   <div>
     <div class="he_top">
       <div>
+        <div>
         <ul>
           <li>
             <a href="javascript,">东为商城</a>
@@ -32,9 +33,12 @@
           </li>
         </ul>
       </div>
+      </div>
+      
     </div>
     <div class="he_logo">
-      <div>图片</div>
+      <div>
+        <div>图片</div>
       <div>
         <div class="input_p">
           <input type="text" />
@@ -53,6 +57,8 @@
         <div>联系方式</div>
         <div>在线客服</div>
       </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -70,19 +76,19 @@ export default {};
   border-bottom: 1px solid #eee;
 }
 .he_top > div {
-  float: left;
+  width:90%;
+  margin:0 auto;
 }
-.he_top > div:first-child {
+.he_top > div>div:first-child {
   width: 35%;
+   display: inline-block;
 }
 
-.he_top > div:last-child {
+.he_top > div>div:last-child {
   width: 65%;
+   display: inline-block;
 }
-.he_top > div ul > li {
-  display: inline-block;
-}
-.he_top > div ul > li {
+.he_top > div >div>ul > li {
   display: inline-block;
 }
 .he_top > div ul > li + li {
@@ -91,24 +97,30 @@ export default {};
 /* logo行区 */
 .he_logo {
   width: 100%;
-  height:120px;
   padding: 2rem 0 1rem 0;
 }
+
 .he_logo > div {
-  float:left; 
+  width:90%;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
 }
-.he_logo > div:first-child {
+.he_logo >div> div:first-child {
   width: 30%;
   margin-top:10px;
+  float: left;
 }
-.he_logo > div:nth-child(2) {
-  width: 40%;
-}
-.he_logo > div:last-child {
+.he_logo > div>div:nth-child(2) {
   width: 30%;
-  margin-top:10px;
+  float: left;
 }
-.he_logo > div:last-child > div {
+.he_logo > div>div:last-child {
+  width: 32%;
+  margin-top:10px;
+  float: left;
+}
+.he_logo > div> div:last-child > div {
   display: inline-block;
   margin-right: 2rem;
 }
@@ -131,13 +143,14 @@ export default {};
   position: absolute;
   top: -2px;
   right: -2px;
-  width: 118px;
+  /* width: 4rem/; */
   line-height: 1px;
   color: #fff;
   background-color: #ff734c;
   border: 24px solid #ff734c;
   border-radius: 24px;
   outline: none;
+  padding:0 .5rem;
 }
 .small_title{
   margin-top:0.8rem;

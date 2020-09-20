@@ -1,7 +1,8 @@
 <template>
   <div class="nav">
-    <div class="nav_title">
-      <span>三</span>
+    <div class='cate'>
+      <div class="nav_title">
+      <span style="float:left;margin-left:1rem;">三</span>
       <span>所有分类</span>
       <div class="nav_cate">
         <div>
@@ -65,6 +66,8 @@
         <li>洗衣机</li>
       </ul>
     </div>
+    </div>
+    
     <div class="nav_swiper">
       <swiper :options="swiperOption">
         　　<swiper-slide>
@@ -145,18 +148,23 @@
 </script>
 <style scoped>
   .nav {
-    width: 100%;
+    width: 80%;
+    margin:0 auto;
     position: relative;
   }
 
-  .nav>div {
+  /* .nav>div {
     display: inline-block;
+  } */
+  .cate{
+    width:100%;
   }
-
-  .nav>.nav_title {
+  .nav>div>.nav_title {
     /* padding-left: 24px; */
     font-size: 18px;
     position: relative;
+    float: left;
+    /* display: inline-block; */
     width: 12rem;
     height: 3rem;
     line-height: 3rem;
@@ -164,11 +172,17 @@
     border-radius: 12px 12px 0 0;
     background-color: #ff734c;
   }
-
-  .nav>.other {
+  .nav_cate{
+    float: left;
+  }
+  .nav>div>.other {
     width: 60%;
+    float: left;
     text-align: left;
     margin-left: 2rem;
+    margin-top:1rem;
+    font-weight:bold;
+    font-size:1.2rem;
   }
 
   .other>ul {
@@ -250,4 +264,5 @@
     height:2rem;
     line-height: 2rem;
   }
+  
 </style>
