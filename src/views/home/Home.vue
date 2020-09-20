@@ -6,9 +6,11 @@
     <home-main></home-main> 
     <home-special></home-special>
      <home-money></home-money>
-    <home-floor></home-floor>
+     -->
     <home-community></home-community>
+    <home-floor></home-floor>
     <home-protect></home-protect>
+    <!-- 
     <float-left></float-left>
     <float-right></float-right>  -->
   </div>
