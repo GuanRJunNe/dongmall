@@ -65,7 +65,8 @@
 <script>
 export default {};
 </script>
-<style scoped>
+<style scoped lang='scss'>
+
 .he_top {
   width: 100%;
   height: 35px;
@@ -76,35 +77,50 @@ export default {};
   border-bottom: 1px solid #eee;
 }
 .he_top > div {
-  width:90%;
+  width:80%;max-width:1200px;;
   margin:0 auto;
+  position: relative;
+  overflow: hidden;
 }
 .he_top > div>div:first-child {
   width: 35%;
-   display: inline-block;
+  position: relative;
+  overflow: hidden;
+  float: left;
 }
 
 .he_top > div>div:last-child {
   width: 65%;
-   display: inline-block;
+  float: left;
+}
+.he_top > div >div>ul{
+  list-style: none;
 }
 .he_top > div >div>ul > li {
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
+}
+.he_top > div >div:last-child>ul > li {
+  float: right;
 }
 .he_top > div ul > li + li {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 /* logo行区 */
 .he_logo {
   width: 100%;
   padding: 2rem 0 1rem 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .he_logo > div {
-  width:90%;
+  width:80%;max-width:1200px;;
+  padding:0.2rem;
   margin:0 auto;
   position: relative;
-  overflow: hidden;
+    overflow: hidden;
+  
 }
 .he_logo >div> div:first-child {
   width: 30%;
@@ -125,8 +141,8 @@ export default {};
   margin-right: 2rem;
 }
 .input_p {
-  width: 100%;
-  height: 48px;
+  width: 80%;
+  height: 2.6rem;
   border: 2px solid #ff734c;
   border-radius: 24px;
   position: relative;
@@ -137,23 +153,23 @@ export default {};
   outline: none;
   position: absolute;
   top: 7px;
+  width:24rem;
   left: 9px;
 }
 .input_p > button {
   position: absolute;
   top: -2px;
   right: -2px;
-  /* width: 4rem/; */
-  line-height: 1px;
+  width: 6rem;
   color: #fff;
   background-color: #ff734c;
-  border: 24px solid #ff734c;
+  border: 0.75rem solid #ff734c;
   border-radius: 24px;
   outline: none;
-  padding:0 .5rem;
 }
 .small_title{
   margin-top:0.8rem;
+  width:80%;max-width:1200px;;
 }
 .small_title ul{
   list-style:none; 
@@ -162,4 +178,41 @@ export default {};
   display: inline-block;
   margin-right:15px;
 }
+/* 大屏幕 ：大于等于1200px*/
+@media (max-width: 1200px) {
+  div.input_p > input{
+    width:10rem;
+  }
+}
+ 
+ /*默认*/
+ @media (min-width: 980px){
+  div.input_p > input{
+    width:10rem;
+  }
+  .he_logo > div>div:nth-child(2) {
+  width: 40%;
+  float: left;
+}
+  .he_logo > div>div:last-child {
+    width: 25%;
+  margin-top:10px;
+  float: left;
+}
+}
+ 
+ /* 平板电脑和小屏电脑之间的分辨率 */
+ @media (min-width: 768px) and (max-width: 979px) { 
+  div.input_p > input{
+    width:2rem;
+  }
+  .he_logo > div>div:last-child {
+  display: none;
+}
+.he_logo > div>div:nth-child(2) {
+  width: 50%;
+  float: left;
+}
+  }
+
 </style>

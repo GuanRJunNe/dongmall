@@ -101,84 +101,135 @@
       <img src="@/assets/img/pic1.png" alt="">
      </div>
     </div>
-  <div class="mall_foot">
-    
-  </div>
   </div>
 </template>
 <script>
 
 </script>
-<style scoped>
+<style lang='scss'  scoped>
 .mall_desc{
-  width:100%;
+  width:80%;max-width:1200px;;
+  margin:0 auto;
   position: relative;
   overflow:hidden;
 }
 .mall_desc>div{
-  width:80%;
+  width:100%;
   margin:0 auto;
 }
 .mall_desc>div>img{
-  width:inherit;
+  width:100%;
 }
 .mall_hot{
-  width:inherit;
-  height:12rem;
-  padding:1rem 0;
+  padding:2rem ;
   background-color:#A8232B;
 }
 .mall_hot ul{
-  width:80%;
-  height:inherit;
-  margin:0 auto;
+  width:100%;
   list-style: none;
 }
 .mall_hot  li{
-  width:22%;
+  width:24%;
+  display: inline-block;
   background-color:#fff;
   border-radius:12px;
-  margin-right:2rem;
-  float:left;
+  margin-right:0.32rem;
 }
 .small_hot>a>div{
   width:100%;
-  height:10rem;
-  padding:1.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem;
 }
 .hot_left{
-  width:30%;
+  width:40%;
   float: left;
+  margin-top:2rem;
 }
 .hot_left>div:first-child{
   font-size:1.1rem;
-  margin-top:0.5rem;
+  color:#000;
 }
 .hot_left>p{
+  font-size:0.9rem;
   margin-top:0.5rem;
 }
 .hot_left>div:last-child{
   margin-top:1.5rem;
+  color: #C26137;
+  font-size:1.2rem;
+  font-weight: bold;
 }
 .hot_right{
-  width:70%;
-  height:100%;
+  width:50%;
+  padding:0.2rem;
   float: left;
 }
 .hot_right>img{
   width:100%;
-  height:100%;
 }
 div.mall_pic{
-  width:80%;
+  width:100%;
   position:relative;
   overflow: hidden;
-  text-align: center;
-  margin-top:2rem;
 }
 .mall_pic>div{
   width:24%;
+  margin:0 0.1rem;
+  /* display: inline-block; */
   float: left;
 }
+.mall_pic>div img{
+  width:100%;
+  height:100%;
+}
+ /* 大屏幕 ：大于等于1200px*/
+ @media (min-width: 1200px) {
+  
+}
+ 
+ /*默认*/
+ @media (min-width: 980px){
+  .mall_hot{
+    padding:1rem;
+  }
+  .floor_title>p{
+    font-size:1.2rem;
+  }
+ 
+}
+ 
+ /* 平板电脑和小屏电脑之间的分辨率 */
+ @media (min-width: 767px) and (max-width: 979px) { 
+  .mall_hot{
+    padding:1rem;
+  }
+  .hot_right{
+    width:60%;
+  }
+  .hot_left{
+    width:40%;
+  }
+   /*
+  div.hot_left>div:first-child{
+    font-size:1rem;
+  }
+  div.hot_left>div:last-child{
+    font-size:0.9rem;
+  }
+  div.hot_left>div:nth-child(2){
+    font-size:0.6rem;
+  } */
+  .mall_hot  li{
+  width:32%;
+  display: inline-block;
+  background-color:#fff;
+  border-radius:12px;
+  margin-right:0.32rem;
+}
+.mall_hot  li:last-child{
+  display: none;
+}
 
+  }
 </style>
