@@ -224,11 +224,17 @@
 
   .nav {
     width: 80%;
+    height:3rem;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
   }
-
+  .nav_swiper{
+    min-height:25rem;
+  }
+.nav_swiper img{
+  height:100%;
+}
   .nav_left {
     width: 35%;
     /* font-size: 18px; */
@@ -300,17 +306,10 @@
 .swiper_nav{
   position: relative;
 }
-  /* .nav_swiper {
-    width: 100%;
-    height: 25rem;
-    margin-top: 3rem;
-  }
-  .nav_swiper img{
-    height:25rem;
-  }
+  
   .swiper-button-prev,.swiper-button-next {
     display: none;
-  } */
+  } 
 
 
   /*

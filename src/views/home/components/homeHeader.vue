@@ -104,7 +104,7 @@ export default {};
   float: right;
 }
 .he_top > div ul > li + li {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 /* logo行区 */
 .he_logo {
