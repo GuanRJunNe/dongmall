@@ -6,13 +6,22 @@
         <span>更多电器 ></span>
       </div>
       <div class='floor_desc'>
-        <div class='floor_img'>
-          <a href="">
-            <img src="@/assets/img/big.png" alt="">
-          </a>
-        </div>
         <div>
           <ul>
+            <li>
+              <div>
+                <a href="">
+                  <div class="small_img">
+                    <img src="@/assets/img/rose.jpg" alt="">
+                  </div>
+                  <div class='small_desc'>
+                    <div class="f_title">爱情 ·一往情深</div>
+                    <div class="price">￥239</div>
+                    <div class="sale">已售12.8万件</div>
+                  </div>
+                </a>
+              </div>
+            </li>
             <li>
               <div>
                 <a href="">
@@ -85,6 +94,20 @@
                   </div>
                 </a>
               </div>
+            </li>
+            <li>
+              <div>
+                <a href="">
+                  <div class="small_img">
+                    <img src="@/assets/img/rose.jpg" alt="">
+                  </div>
+                  <div class='small_desc'>
+                    <div class="f_title">爱情 ·一往情深</div>
+                    <div class="price">￥239</div>
+                    <div class="sale">已售12.8万件</div>
+                  </div>
+                </a>
+              </div>
             </li><li>
               <div>
                 <a href="">
@@ -141,6 +164,7 @@
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top:0.5rem;
   }
 
   .floor_one {
@@ -180,7 +204,7 @@
     margin-top: 1rem;
   }
 
-  .floor_img {
+  /* .floor_img {
     width: 19%;
     float: left;
   }
@@ -188,10 +212,10 @@
   .floor_img img {
     width: 100%;
     height: 100%;
-  }
+  } */
 
   .floor_desc>div:last-child {
-    width: 80%;
+    width: 100%;
     display: inline-block;
   }
 
@@ -200,7 +224,7 @@
   }
 
   .floor_desc>div:last-child li {
-    width: 24%;
+    width: 19%;
     display: inline-block;
     padding: 1rem;
   }
@@ -237,12 +261,12 @@
   .small_img {
     width: 100%;
     height: 70%;
+    overflow: hidden;
   }
 
   .small_img img {
     width: 100%;
     height: 100%;
-    overflow: hidden;
     -webkit-transition: all .4s;
     -o-transition: all .8s;
     transition: all .8s;
@@ -259,6 +283,7 @@
   .small_desc {
     width: 100%;
     height: 25%;
+    margin-top:0.5rem;
   }
 
   .small_img:hover+div.small_desc {
@@ -305,7 +330,7 @@
     display: inline-block;
     padding: 1rem;
   }
-  .floor_desc>div:last-child li:last-child {
+  .floor_desc>div:last-child li:last-child, .floor_desc>div:last-child li:nth-child(4){
     display: none;
   }
   }

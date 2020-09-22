@@ -311,6 +311,11 @@
     display: none;
   } 
 
+ @media (min-width: 768px) and (max-width: 979px) { 
+ div.nav_left .nav_cate, div.nav_left {
+   width:11rem;
+ }
+  }
 
   /*
 
